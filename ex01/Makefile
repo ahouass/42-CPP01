@@ -3,7 +3,7 @@ NAME    = zombie
 CXX     = c++
 CXXFLAGS= -Wall -Wextra -Werror -std=c++98
 
-SRC     = main.cpp Zombie.cpp Zombie.hpp zombieHorde.cpp
+SRC     = main.cpp Zombie.cpp zombieHorde.cpp
 
 OBJS    = $(SRC:.cpp=.o)
 

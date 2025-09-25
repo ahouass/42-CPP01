@@ -1,9 +1,9 @@
-NAME = Violence
+NAME = replace
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+SRC = main.cpp 
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -13,7 +13,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
-%.o: %.cpp Weapon.hpp HumanA.hpp HumanB.hpp
+%.o: %.cpp 
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
