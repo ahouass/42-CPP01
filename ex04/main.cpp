@@ -29,6 +29,7 @@ int main(int argc, char **argv) {
         content += line;
         content += "\n";
     }
+
     inFile.close();
 
     std::string result;

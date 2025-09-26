@@ -1,10 +1,11 @@
 #include "HumanB.hpp"
+#include <iostream>
 
 HumanB::HumanB(std::string name) : name(name), weapon(NULL) {}
 
-void	HumanB::setWeapon(Weapon& weapon)
+void	HumanB::setWeapon(Weapon& _weapon)
 {
-	this->weapon = &weapon;
+	weapon = &_weapon;
 }
 
 void	HumanB::attack() const
